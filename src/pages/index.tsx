@@ -15,10 +15,16 @@ import {
   BookOpen
 } from "lucide-react";
 import ProjectCard from "@/components/ProjectCard";
+import { BubbleChat } from 'flowise-embed-react';
 
 export default function Home() {
   return (
     <div className="w-full flex flex-col">
+      <BubbleChat
+        chatflowid="db16e134-8458-42a1-ba55-f49434adf06e"
+        apiHost="https://cloud.flowiseai.com"
+      />
+
       {/* Hero Section */}
       <section
         id="hero"
